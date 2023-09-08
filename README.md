@@ -4,6 +4,8 @@ Gruppinlämning, i Utveckling och driftsättning i molnmiljö
 **Mål**: Skapa ett serverlöst filhanteringssystem där användare kan ladda upp, organisera och hämta filer lagrade i AWS S3 med hjälp av AWS Lambda och ett webbgränssnitt.
 Så du ska kunna ladda upp en fil till AWS S3 från ditt webbgränssnitt, samt kunna hämta filer som ligger där.
 
+**Exempel på projekt**: Dina bästa vänner som inte kan ett dugg teknik gifter sig. De har valt att förlita sig på sina gäster att dokumentera den stora dagen. Dock kan det bli körigt att samla alla bilder som de får in från alla olika håll å kanter. Det är här NI kommer in! Ni har ju precis haft en kurs i AWS och skulle kunna sätta upp en bucket åt turturduvorna och en liten webbapplikation där alla gäster kan ladda upp sina foton från den stora dagen. Sen vill ju gärna gästerna också se de andras foton som redan ligger uppe i bucketen med på hemsidan. Kanske är deras nya profilbild där liksom.
+
 ### G-kriterier:
  
 **Skapa en S3-bucket**: Använd AWS Management Console eller AWS CLI, skapa en S3-bucket där användare kan lagra filer.
