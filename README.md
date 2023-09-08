@@ -46,4 +46,6 @@ Så du ska kunna ladda upp en fil till AWS S3 från ditt webbgränssnitt, samt k
 **Rengöring**:
     - Glöm inte att radera alla resurser du skapat för att undvika pågående avgifter.
 
-Den här inlämningen är ett mer omfattande projekt som involverar filhantering, organisation, extrahering av metadata och användarinteraktion via ett webbgränssnitt. Det kommer att ge värdefull erfarenhet av att bygga en serverlös applikation med AWS Lambda och S3.
+
+
+Den här inlämningen är ett mer omfattande projekt som involverar filhantering, organisering, extrahering av metadata och användarinteraktion via ett webbgränssnitt. Det kommer att ge värdefull erfarenhet av att bygga en serverlös applikation med AWS Lambda och S3.
