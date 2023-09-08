@@ -1,2 +1,49 @@
 # inlamning-1
 Inlämning 1. grupp, i Utveckling och driftsättning i molnmiljö
+
+**Mål**: Skapa ett serverlöst filhanteringssystem där användare kan ladda upp, organisera och hämta filer lagrade i AWS S3 med hjälp av AWS Lambda och ett webbgränssnitt.
+Så du ska kunna ladda upp en fil till AWS S3 från ditt webbgränssnitt, samt kunna hämta filer som ligger där.
+
+### G-kriterier:
+ 
+**Skapa en S3-bucket**: Använd AWS Management Console eller AWS CLI, skapa en S3-bucket där användare kan lagra filer.
+
+**Skapa en AWS Lambda-funktion**:
+   - Gå till AWS Lambda Console.
+   - Skapa en ny Lambdafunktion.
+   - Välj en trigger: S3.
+   - Konfigurera S3-utlösaren för att titta efter objektskapande, modifieringar och raderingar i din S3-bucket.
+
+**Skriv lambdafunktionskod**:
+   - Skriv en Lambda-funktion i node.js.
+   - När en fil laddas upp till S3-bucket bör Lambda-funktionen utlösas.
+   - Implementera logik för att organisera filer i mappar baserat på användardefinierade regler (t.ex. filtyp, datum).
+   - *Implementera extrahering av filmetadata (t.ex. filstorlek, MIME-typ) och lagra det i en databas (t.ex. LowDb eller NeDb, ).* (Frivilligt)
+
+**Skapa ett webbgränssnitt**:
+   - Utveckla ett webbaserat användargränssnitt där användare kan:
+     - Ladda upp filer till S3-hinken.
+     - Bläddra och visa uppladdade filer.
+     - Sök efter filer baserat på metadata.
+   - Använd AWS SDK eller AWS Amplify för att interagera med AWS-tjänster från din webbapp. (Frivilligt)
+
+### VG-kriterier:
+
+**Ange behörigheter**:
+   - Se till att din Lambda-funktion och webbapplikation har de nödvändiga IAM-behörigheterna för att komma åt din S3-bucket och andra nödvändiga AWS-tjänster.
+
+**Användarautentisering**:
+   - Implementera användarautentisering för ditt webbgränssnitt med AWS Cognito eller en liknande tjänst för att säkra användardata och åtkomst.
+
+#### Level-up:
+**Övervakning och felhantering**:
+   - Implementera loggning, felhantering och undantagsrapportering i din Lambdafunktion och webbapplikation.
+   - Ställ in CloudWatch Alarms för att övervaka nyckeltal.
+
+**Datasäkerhetskopiering och arkivering**:
+   - Implementera strategier för säkerhetskopiering och arkivering av filer för filer lagrade i S3, såsom livscykelpolicyer och Glacier-lagring för äldre filer.
+
+**Rengöring**:
+    - Glöm inte att radera alla resurser du skapat för att undvika pågående avgifter.
+
+Den här inlämningen är ett mer omfattande projekt som involverar filhantering, organisation, extrahering av metadata och användarinteraktion via ett webbgränssnitt. Det kommer att ge värdefull erfarenhet av att bygga en serverlös applikation med AWS Lambda och S3.
