@@ -1,5 +1,5 @@
 # Inlämning 1
-Gruppubkämning, i Utveckling och driftsättning i molnmiljö
+Gruppinlämning, i Utveckling och driftsättning i molnmiljö
 
 **Mål**: Skapa ett serverlöst filhanteringssystem där användare kan ladda upp, organisera och hämta filer lagrade i AWS S3 med hjälp av AWS Lambda och ett webbgränssnitt.
 Så du ska kunna ladda upp en fil till AWS S3 från ditt webbgränssnitt, samt kunna hämta filer som ligger där.
