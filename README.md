@@ -24,24 +24,21 @@ Så du ska kunna ladda upp en fil till AWS S3 från ditt webbgränssnitt, samt k
    - Utveckla ett webbaserat användargränssnitt där användare kan:
      - Ladda upp filer till S3-hinken.
      - Bläddra och visa uppladdade filer.
-     - Sök efter filer baserat på metadata.
    - Använd AWS SDK eller AWS Amplify för att interagera med AWS-tjänster från din webbapp. (Frivilligt)
 
 ### VG-kriterier:
 
 **Ange behörigheter**:
    - Se till att din Lambda-funktion och webbapplikation har de nödvändiga IAM-behörigheterna för att komma åt din S3-bucket och andra nödvändiga AWS-tjänster.
+   - 
+**I webbgränssnittet**:
+   - Sök efter filer baserat på metadata.
 
-**Användarautentisering**:
-   - Implementera användarautentisering för ditt webbgränssnitt med AWS Cognito eller en liknande tjänst för att säkra användardata och åtkomst.
-
+     
 #### Level-up:
 **Övervakning och felhantering**:
    - Implementera loggning, felhantering och undantagsrapportering i din Lambdafunktion och webbapplikation.
    - Ställ in CloudWatch Alarms för att övervaka nyckeltal.
-
-**Datasäkerhetskopiering och arkivering**:
-   - Implementera strategier för säkerhetskopiering och arkivering av filer för filer lagrade i S3, såsom livscykelpolicyer och Glacier-lagring för äldre filer.
 
 **Rengöring**:
     - Glöm inte att radera alla resurser du skapat för att undvika pågående avgifter.
